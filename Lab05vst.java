@@ -21,13 +21,13 @@ public class Lab05vst extends Applet {
         x1 = 10;
         y1 = 640;
         x2 = 990;
-        y2 = 625;
+        y2 = 640;
         for (int k = 0; k < 49; k++) {
             g.drawLine(x1, y1, x2, y2);
             x1 += 20;
-            y2 -= 12;
+            y2 -= 13;
 
-            // top right corner
+            // bottom left corner
 
 
         }
@@ -41,6 +41,28 @@ public class Lab05vst extends Applet {
             x2 -= 20;
             y1 -= 13;
 
+
+        }
+// top left corner
+        x1 = 990;
+        y1 = 10;
+        x2 = 10;
+        y2 = 10;
+
+        for (int k = 0; k < 49; k++) {
+            g.drawLine(x2, y2, x1, y1);
+            x1 -= 20;
+            y2 += 13;
+        }
+// top right corner
+        x1 = 10;
+        y1 = 10;
+        x2 = 990;
+        y2 = 10;
+        for (int k = 0; k < 49; k++) {
+            g.drawLine(x1, y1, x2, y2);
+            x1 += 20;
+            y2 += 13;
 
         }
 
